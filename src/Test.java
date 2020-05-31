@@ -1,8 +1,7 @@
 import processing.core.PApplet;
-import processing.core.PFont;
 
-    public class Test extends PApplet {
-        private Campi c;
+public class Test extends PApplet {
+        private Campo c;
 
         public static void main(String[] args) {
             PApplet.main("Test");
@@ -13,7 +12,8 @@ import processing.core.PFont;
         }
 
         public void setup() {
-            c = new Campi(this);
+            int pos[][]={{4,7}, {15,15}};
+            c = new Campo(this, pos);
         }
 
         public void draw() {
