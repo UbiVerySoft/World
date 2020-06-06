@@ -18,7 +18,7 @@ public class Campo {
         for (int i = 0; i < pos.length; i++) campo[pos[i][0]][pos[i][1]]=1;
     }
 
-    public void creaCampo(){
+    public void show() {
         for (int y = 0; y < BORDIY; y++){
             for (int x = 0; x < BORDIX; x++ ){
                 switch (campo[y][x]){
@@ -35,13 +35,5 @@ public class Campo {
                         (processing.width/BORDIX)+1, (processing.height/BORDIY)+1);
             }
         }
-    }
-
-    public void RiempiMatrice(){
-
-    }
-
-    public void show() {
-        creaCampo();
     }
 }
